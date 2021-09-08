@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    background: #f6f6f6;
+}
+
+.section-heading, .article-title {
+    margin: 10px 0;
+}
+
+/* Header */
+
+header {
+    background-color: #0e0c0c;
+    height: 70px;
+}
+
+header .navigation li .dropdown {
+    top: 70px;
+}
+
+/* Body */
+
+main {
+    min-height: auto;
+}
+
+.admin-wrapper {
+    padding-top: 0;
+    display: flex;
+    width: 100%;
+    height: calc(100% - 75px);
+    height: -webkit-calc(100% - 75px);
+}
+
+.admin-wrapper .side-nav {
+    background: #2b2a2a;
+    padding: 20px;
+    width: 20%;
+    margin: 0;
+}
+
+.admin-wrapper .side-nav li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.admin-wrapper .side-nav li a {
+    color: whitesmoke;
+    padding: 20px;
+    display: block;
+}
+
+.admin-wrapper .admin-content {
+    float: left;
+    width: 80%;
+    padding: 20px 80px;
+    height: 100%;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.admin-wrapper .admin-content > h2 {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.admin-wrapper .admin-content .btn {
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 5px;
+    width: auto;
+}
+
+.admin-wrapper .admin-content input.btn {
+    width: 120px;
+}
+
+.admin-wrapper .admin-content input.btn-right {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    width: 130px;
+    height: 48px;
+    margin-right: 0;
+}
+
+.admin-wrapper .admin-content textarea {
+    margin-bottom: 20px;
+}
+
+.admin-wrapper .admin-content .text-input {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.admin-wrapper .admin-content .input-fields {
+    margin-bottom: 20px;
+}
+
+.admin-wrapper .admin-content .text-input.select, input[name="image"] {
+    height: auto;
+    padding: 5px;
+    border-radius: 0;
+    font-size: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 17px;
+}
+
+th, 
+td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #b4b4b4;
+} 
+
+.edit {
+    color: green;
+}
+
+.edit:hover {
+    color: #055519;
+    text-decoration: underline;
+}
+
+.delete {
+    color:red;
+}
+
+.delete:hover {
+    color: #f0343e;
+    text-decoration: underline;
+}
+
+.publish {
+    color: blue;
+}
+
+.publish:hover {
+    color: #2618eec9;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .admin-wrapper .admin-content input.btn-right {
+        position: relative;
+        width: 130px;
+        height: 48px;
+        margin-left: 80px;
+        margin-bottom: 45px;
+    }
+
+}
+
+@media only screen and (max-width: 547px) {
+
+    .admin-wrapper .admin-content .btn {
+        display: block;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .admin-wrapper .admin-content input.btn-right {
+        width: 100%;
+        margin-top: 0;
+    }
+
+}
